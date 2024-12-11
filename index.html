@@ -15,9 +15,9 @@
             font-size: 36px;
             color: #000;
             display: flex;
-            justify-content: space-between; /* Ensure space between brand and buttons */
-            align-items: center; /* Align items vertically */
-            padding: 10px 20px; /* Add some padding to the navbar */
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 10px 20px; 
         }
 
         #brand {
@@ -31,7 +31,7 @@
 
         .nav-buttons-container {
             display: flex;
-            gap: 15px; /* Space between buttons */
+            gap: 15px; 
         }
 
         .nav-button {
@@ -47,8 +47,8 @@
         }
 
         img {
-            width: 100%; /* Make image take up full width of its container */
-            height: auto; /* Maintain aspect ratio */
+            width: 100%;
+            height: auto; 
         }
 
         #FAQ-container {
@@ -70,7 +70,7 @@
         justify-content: space-between;
         align-items: center;
         cursor: pointer;
-        box-sizing: border-box; /* Ensures padding doesn't affect width */
+        box-sizing: border-box; 
         border-radius: 7px;
         }
 
@@ -84,7 +84,7 @@
         }
 
         .FAQ-content {
-            display: none; /* Hide the content initially */
+            display: none; 
             background-color: #f0f0f0;
             padding: 10px;
             margin-top: 10px;
@@ -109,49 +109,50 @@
     </div>
     
     <div id="FAQ-container">
-        <div id="FAQ-title">FAQ</div>
-        
-        <div class="FAQ-bar" onclick="toggleFAQ()">
+        <div class="FAQ-bar" onclick="toggleFAQ(this)">
             <div class="FAQ-txt">What is Pet Care?</div>
             <div class="FAQ-plus">+</div>
         </div>
         
-        <div class="FAQ-content" id="FAQ-content">
+        <div class="FAQ-content">
             <p>Pet Care involves feeding, grooming, and ensuring your pets are healthy and happy.</p>
         </div>
-
-        <div class="FAQ-bar" onclick="toggleFAQ()">
+        
+        <div class="FAQ-bar" onclick="toggleFAQ(this)">
             <div class="FAQ-txt">What is Pet Care?</div>
             <div class="FAQ-plus">+</div>
         </div>
         
-        <div class="FAQ-content" id="FAQ-content">
+        <div class="FAQ-content">
             <p>Pet Care involves feeding, grooming, and ensuring your pets are healthy and happy.</p>
         </div>
-        <div class="FAQ-bar" onclick="toggleFAQ()">
+        
+        <div class="FAQ-bar" onclick="toggleFAQ(this)">
             <div class="FAQ-txt">What is Pet Care?</div>
             <div class="FAQ-plus">+</div>
         </div>
         
-        <div class="FAQ-content" id="FAQ-content">
+        <div class="FAQ-content">
             <p>Pet Care involves feeding, grooming, and ensuring your pets are healthy and happy.</p>
         </div>
+        
 
     </div>
 
     <script>
-        function toggleFAQ() {
-            var content = document.getElementById("FAQ-content");
-            var plusSign = document.querySelector(".FAQ-plus");
+        function toggleFAQ(element) {
+            var content = element.nextElementSibling;
+            var plusSign = element.querySelector(".FAQ-plus");
 
             if (content.style.display === "none" || content.style.display === "") {
-                content.style.display = "block";
-                plusSign.innerHTML = "-"; // Change plus sign to minus when expanded
+                content.style.display = "block"; 
+                plusSign.innerHTML = "-"; 
             } else {
-                content.style.display = "none";
-                plusSign.innerHTML = "+"; // Change back to plus when collapsed
+                content.style.display = "none"; 
+                plusSign.innerHTML = "+"; 
             }
         }
+
     </script>
 </body>
 </html>
