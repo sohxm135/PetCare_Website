@@ -3,97 +3,7 @@
 <head>
     <title>Pet Care</title>
     <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-color: #e2eeab;
-            margin: 0;
-            padding: 0;
-        }
-
-        #navbar,#FAQ-title {
-            font-family: 'Irish Grover', sans-serif;
-            font-size: 36px;
-            color: #000;
-            display: flex;
-            justify-content: space-between; 
-            align-items: center; 
-            padding: 10px 20px; 
-        }
-
-        #brand {
-            display: flex;
-            align-items: center;
-        }
-
-        #brand-name {
-            margin-left: 10px;
-        }
-
-        .nav-buttons-container {
-            display: flex;
-            gap: 15px; 
-        }
-
-        .nav-button {
-            cursor: pointer;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .nav-button:hover {
-            text-decoration: underline;
-        }
-
-        img {
-            width: 100%;
-            height: auto; 
-        }
-
-        #FAQ-container {
-            margin: 20px;
-        }
-
-        #FAQ-title {
-            font-size: 30px;
-            margin-bottom: 10px;
-        }
-
-        .FAQ-bar {
-        width: 100%;
-        color: #000;
-        background-color: #B1B2B5;
-        padding: 10px;
-        margin: 5px 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        cursor: pointer;
-        box-sizing: border-box; 
-         border-radius: 0px;
-        }
-
-        .FAQ-txt {
-            color: rgb(0, 0, 0);
-        }
-
-        .FAQ-plus {
-            font-size: 30px;
-            color: rgb(31, 27, 27);
-        }
-
-        .FAQ-content {
-            display: none; 
-            background-color: #f0f0f0;
-            padding: 10px;
-            margin-top: 10px;
-        }
-
-        #signup-button{
-            background-color: #B1B2B5;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS -->
 </head>
 <body>
     <div class="navbar" id="navbar">
@@ -109,54 +19,29 @@
     </div>
     
     <div>
-        <img src="https://cdn.discordapp.com/attachments/1284475564148654165/1316526381567443105/image.png?ex=675b5e3d&is=675a0cbd&hm=6d1fbf12083c9d8991cc8211384074f0ec2e5bac1788166b4d7dfb3caab4a2f7&" alt="">
+        <img src="https://cdn.discordapp.com/attachments/1284475564148654165/1316526381567443105/image.png" alt="">
     </div>
     
     <div id="FAQ-container">
-        <div class="FAQ-bar" onclick="toggleFAQ(this)">
-            <div class="FAQ-txt">What is Pet Care?</div>
-            <div class="FAQ-plus">+</div>
-        </div>
-        
-        <div class="FAQ-content">
-            <p>Pet Care involves feeding, grooming, and ensuring your pets are healthy and happy.</p>
-        </div>
+        <div id="FAQ-title">FAQ</div>
         
         <div class="FAQ-bar" onclick="toggleFAQ(this)">
             <div class="FAQ-txt">What is Pet Care?</div>
             <div class="FAQ-plus">+</div>
         </div>
-        
         <div class="FAQ-content">
             <p>Pet Care involves feeding, grooming, and ensuring your pets are healthy and happy.</p>
         </div>
         
         <div class="FAQ-bar" onclick="toggleFAQ(this)">
-            <div class="FAQ-txt">What is Pet Care?</div>
+            <div class="FAQ-txt">How often should I groom my pet?</div>
             <div class="FAQ-plus">+</div>
         </div>
-        
         <div class="FAQ-content">
-            <p>Pet Care involves feeding, grooming, and ensuring your pets are healthy and happy.</p>
+            <p>It depends on the breed, but generally, pets should be groomed every 4–8 weeks.</p>
         </div>
-        
-
     </div>
 
-    <script>
-        function toggleFAQ(element) {
-            var content = element.nextElementSibling;
-            var plusSign = element.querySelector(".FAQ-plus");
-
-            if (content.style.display === "none" || content.style.display === "") {
-                content.style.display = "block"; 
-                plusSign.innerHTML = "-"; 
-            } else {
-                content.style.display = "none"; 
-                plusSign.innerHTML = "+"; 
-            }
-        }
-
-    </script>
+    <script src="script.js"></script> <!-- Link to the external JS -->
 </body>
 </html>
