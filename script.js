@@ -10,3 +10,4 @@ function toggleFAQ(element) {
         plusSign.innerHTML = "+";
     }
 }
+

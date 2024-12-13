@@ -1,94 +1,130 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Irish Grover', sans-serif;
-    background-color: #f4f5c3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .container {
-    text-align: center;
-    width: 100%;
-    max-width: 400px;
-    margin: auto;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 28px;
-  }
-  
-  main {
-    background-color: #faf9e5;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  main h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  form input {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #e3e3e3;
-  }
-  
-  form button {
-    padding: 10px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    background-color: #c4c4c4;
-    color: #000;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  form button:hover {
-    background-color: #b3b3b3;
-  }
-  
-  .options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
-  }
-  
-  .options a {
-    color: #555;
-    text-decoration: none;
-  }
-  
-  .options a:hover {
-    text-decoration: underline;
-  }
-  
-  .signup {
-    margin-top: 15px;
-  }
-  
-  .signup a {
-    font-weight: bold;
-    text-decoration: none;
-    color: #000;
-  }
-  
-  .signup a:hover {
-    text-decoration: underline;
-  }
-  
+  background-color: #e2eeab;
+  margin: 0;
+  padding: 0;
+  font-family: 'Irish Grover', sans-serif;
+}
+
+body {
+  background-color: #e2eeab;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar, #FAQ-title {
+  font-family: 'Irish Grover', sans-serif;
+  font-size: 36px;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+#brand {
+  display: flex;
+  align-items: center;
+}
+
+#brand-name {
+  margin-left: 10px;
+}
+
+.nav-buttons-container {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-button {
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  text-decoration: underline;
+}
+
+
+#login-container {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  padding: 15% 10%;
+}
+
+#login-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#login-options-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+#login-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 24px;
+  color: black;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+#login-button:hover {
+  background-color: #bbb;
+}
+
+#signup-container {
+  font-size: 16px;
+}
+
+#signup-link {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#signup-link:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%; /* Adjust width to fit container */
+  padding: 10px;
+  margin-bottom: 10px; /* Space between input fields */
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #c7c8b5; /* Muted gray-green background */
+  font-size: 16px; /* Font size for readability */
+  color: #333; /* Text color */
+  box-sizing: border-box; /* Ensures padding doesn't overflow width */
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+  outline: none; /* Removes default outline on focus */
+  border-color: #999; /* Highlight border on focus */
+}
