@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pet Care</title>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS -->
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <div id="brand">
+            <div id="logo"></div>
+            <div id="brand-name">FEATHERS & FURS</div>
+        </div>
+        <div class="nav-buttons-container">
+            <div class="nav-button" id="About-button">ABOUT</div>
+            <div class="nav-button" id="login-button" ><a href="login.html">Login</a></div>
+            <div class="nav-button" id="signup-button">SignUp</div>
+        </div>
+    </div>
+    
+    <div>
+        <img src="images/Homepage-DognCat.png" alt="">
+    </div>
+    
+    <div id="FAQ-container">
+        <div id="FAQ-title">FAQ</div>
+        
+        <div class="FAQ-bar" onclick="toggleFAQ(this)">
+            <div class="FAQ-txt">What is Pet Care?</div>
+            <div class="FAQ-plus">+</div>
+        </div>
+        <div class="FAQ-content">
+            <p>Pet Care involves feeding, grooming, and ensuring your pets are healthy and happy.</p>
+        </div>
+        
+        <div class="FAQ-bar" onclick="toggleFAQ(this)">
+            <div class="FAQ-txt">How often should I groom my pet?</div>
+            <div class="FAQ-plus">+</div>
+        </div>
+        <div class="FAQ-content">
+            <p>It depends on the breed, but generally, pets should be groomed every 4–8 weeks.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to the external JS -->
+</body>
+</html>
