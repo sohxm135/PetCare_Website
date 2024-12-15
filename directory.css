@@ -1,0 +1,30 @@
+body{
+    background-color:#E2EEAB;
+    margin-left:50px;
+}
+h1{
+    font-family:'Irish Grover', cursive;
+    text-align:left;
+}
+h2{
+    font-family:'Irish Grover', cursive;
+}
+h3{
+    font-family:'Irish Grover', cursive;
+}
+p{
+    font-family:'Istok-Web', sans-serif;
+    font-size:14px;
+    margin:0;
+}
+.row{
+    display:flex;
+    align-items:center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.row img{
+    width:25px;
+    height:25px;
+}
