@@ -1,0 +1,163 @@
+body{
+    background-color:#E2EEAB;
+    margin-left:50px;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'Irish Grover', cursive;
+    text-align:center;
+}
+h2{
+    font-family: 'Irish Grover', cursive;
+    text-align:left;
+}
+.ProfileSection{
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+    margin-bottom:20px;
+}
+.Profile{
+    position:relative;
+    width: 450px;
+    height: 250px;
+    overflow: visible;
+}
+#ProfilePic{
+    width:100%;
+    height:100%;
+}
+#greeting{
+    font-family: 'Irish Grover', cursive;
+    font-size:18px;
+    background-color: #7980BB;
+    border-radius: 20px;
+    text-align:center;
+    width:150px;
+    height:40px;
+    position:absolute;
+    bottom:-40px;
+}
+.petphoto{
+    display:flex;
+    align-items: center;
+}
+.ClipArt{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    gap:10px;
+}
+#petClipart{
+    width:50px;
+    height: 50px;
+    object-fit: cover;
+}
+.clipartdetails{
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    margin:0; 
+    gap: 2px;
+}
+#more{
+    margin-top:1px;
+    padding:2px 8px;
+    background-color:#7980BB;
+    border-radius:5px;
+}
+.pair{
+    display: flex;
+    align-items:center;
+    gap: 20px;
+    margin-bottom: 10px;
+    padding:0;
+}
+.pair:first-of-type{
+    margin-top: 50px;
+}
+.attributes{
+    font-family: 'Istok Web', sans-serif;
+    margin: 0;
+    padding:0;
+    margin-left: 20px;
+}
+.parameters {
+    font-family: 'Irish Grover', cursive;
+    background-color: #B1B2B5;
+    border-radius: 20px;
+    border-width: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left; 
+    padding: 0 45px;
+    margin: 0;
+    width: 160px; 
+    height: 50px;
+    text-align: left;
+    box-sizing: border-box; 
+    font-size:18px;
+}
+.Vaccination-bar {
+    width: 100%;
+    color: #000;
+    background-color: rgb(173, 167, 167);
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+.Vaccination-txt {
+    color: rgb(0, 0, 0);
+}
+
+.Vaccination-plus {
+    font-size: 30px;
+    color: rgb(31, 27, 27);
+    font-weight: bolder;
+}
+
+#newVaccine{
+    background-color: #B1B2B5;
+    border-radius:20px;
+}
+
+#newVaccinationCard{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.PrescriptionContainer{
+    display:flex;
+    align-items: center;
+    gap:20px;
+}
+
+.Prescription{
+    display:inline-block;
+    padding: 20px;
+    width: 225px;
+    height: 300px;
+}
+
+#newPrescription{
+    background-color: #7980BB;
+    font-size: 100px;
+    width:100px;
+    height:100px;
+    margin-left: 20px;
+    border-radius: 100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}

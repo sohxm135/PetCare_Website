@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Health Records</title>
+        <link rel="stylesheet" href="health.css">
+        <script src="health.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap">
+    </head>
+    <body>
+        <h1>Health Metrics</h1>
+        <div class="ProfileSection">
+        <div class="Profile">
+        <img src="images/DogProfile_Health.jpeg" alt="Pet's profile photo" id="ProfilePic">
+        <p id="greeting">Hello Bruno!</p>
+        </div>
+        <div class="ClipArt">
+        <img src="images/DogClipart_Health.avif" alt="Pet ClipArt" id="petClipart">
+        <div class="clipartdetails">
+        <b>Bruno</b>
+        <p>dog</p>
+        <button id="more">Read more</button>
+        </div>    
+        </div>
+        </div>
+        <div class="pair">
+        <p class="parameters">Species</p>
+        <p class="attributes">Golden Retriever</p>
+        </div>
+        <div class="pair">
+        <p class="parameters">Age and DOB</p>
+        <p class="attributes">4 years, 27/04/2021</p>
+        </div>
+        <div class="pair">
+        <p class="parameters">Gender</p>
+        <p class="attributes">Male</p>
+        </div>
+        <div class="pair">
+        <p class="parameters">Weight</p>
+        <p class="attributes">15 kg</p>
+        </div>
+        <div class="pair">
+        <p class="parameters">Food Allergies</p>
+        <p class="attributes">Diary</p>
+        </div>
+        <div class="pair">
+        <p class="parameters">Adopted</p>
+        <p class="attributes">Yes</p>
+        </div>
+        <div class="pair">
+        <p class="parameters">Vaccination Status</p>
+        <p class="attributes">All Done</p>
+        </div>
+        <h1>Medical Records</h1>
+        <h2>Vaccination Cards</h2>
+        <div id="Vaccination-details">
+            <div class="Vaccination-bar" onclick="displayCard()">
+                <div class="Vaccination-txt">Distemper</div>
+                <div class="Vaccination-plus">+</div>
+            </div>
+            <div class="Vaccination-bar" onclick="displayCard()">
+                <div class="Vaccination-txt">Parainfluenza</div>
+                <div class="Vaccination-plus">+</div>
+            </div>
+            <div class="Vaccination-bar" onclick="displayCard()">
+                <div class="Vaccination-txt">Parvavirus</div>
+                <div class="Vaccination-plus">+</div>
+            </div>
+            <div id="newVaccinationCard">
+                <button onclick="newCard()" id="newVaccine">+</button>
+                <p>Add new vaccination card</p>
+            </div>
+        </div>
+        <h2>Prescriptions</h2>
+        <div class="PrescriptionContainer">
+        <img src = "images/Prescription1_Health.png" alt="Prescription photo" class="Prescription">
+        <img src = "images/Prescription2_Health.jpg" alt="Prescription photo" class="Prescription">
+        <img src = "images/Prescription3_Health.jpg" alt="Prescription photo" class="Prescription">
+        <button id="newPrescription"> + </button>
+        </div>
+    </body>
+</html>
