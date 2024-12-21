@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Book Vet Appointments</title>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_vet_booking.css">
+    <!-- Reusing the same CSS -->
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <div id="brand">
+            <div id="logo"></div>
+            <div id="brand-name">FEATHERS & FURS</div>
+        </div>
+        <div class="nav-buttons-container">
+            <div class="nav-button" id="home-button"><a href="index.html">Home</a></div>
+            <div class="nav-button" id="directory-button"><a href="directory.html">Directory</a></div>
+        </div>
+    </div>
+
+    <div id="booking-container">
+        <h1>Book a Veterinary Appointment</h1>
+        <form id="booking-form">
+            <label for="pet-name">Pet Name:</label>
+            <input type="text" id="pet-name" name="pet-name" placeholder="Enter your pet's name" required>
+
+            <label for="pet-type">Pet Type:</label>
+            <select id="pet-type" name="pet-type">
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="bird">Bird</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="appointment-date">Appointment Date:</label>
+            <input type="date" id="appointment-date" name="appointment-date" required>
+
+            <label for="vet">Select a Veterinarian:</label>
+            <select id="vet" name="vet">
+                <option value="dr-smith">Dr. Smith</option>
+                <option value="dr-jones">Dr. Jones</option>
+                <option value="dr-lee">Dr. Lee</option>
+            </select>
+
+            <label for="notes">Additional Notes:</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Any special instructions or concerns..."></textarea>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('booking-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            console.log('Form submitted');
+
+            const petName = document.getElementById('pet-name').value;
+            console.log('Pet Name:', petName);
+
+            const petType = document.getElementById('pet-type').value;
+            console.log('Pet Type:', petType);
+
+            const appointmentDate = document.getElementById('appointment-date').value;
+            console.log('Appointment Date:', appointmentDate);
+
+            const vet = document.getElementById('vet').value;
+            console.log('Selected Veterinarian:', vet);
+
+            const notes = document.getElementById('notes').value;
+            console.log('Additional Notes:', notes);
+        });
+    </script>
+</body>
+</html>
