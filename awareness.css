@@ -33,3 +33,82 @@ h1{
         transform: translateX(-100%);
     }
 }
+.imagecontainer {
+    position: relative;
+    width: auto;
+    display: inline-block;
+}
+
+.imagecontainer img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagecontainer:hover img {
+    transform: scale(1.1);
+}
+
+.imagecontainer .readmore {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Irish Grover', cursive;
+    border-radius: 10px;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    font-size: 14px;
+    text-align: center;
+}
+
+.imagecontainer:hover .readmore {
+    opacity: 1;
+}
+
+.youtubeplaybutton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 0, 0, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.youtubeplaybutton::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.imagecontainer:hover .youtubeplaybutton {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.youtube-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
