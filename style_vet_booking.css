@@ -1,0 +1,123 @@
+body {
+    background-color: #e2eeab;
+    margin: 0;
+    padding: 0;
+    font-family: 'Irish Grover', sans-serif;
+}
+
+#navbar, #FAQ-title {
+    font-family: 'Irish Grover', sans-serif;
+    font-size: 36px;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#brand {
+    display: flex;
+    align-items: center;
+}
+
+#brand-name {
+    margin-left: 10px;
+}
+
+.nav-buttons-container {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-button {
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.nav-button:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: #000;
+    text-decoration:none;
+}
+
+#booking-container {
+    background-color: #e2eeab;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+#booking-container h1 {
+    font-size: 30px;
+    font-family: 'Irish Grover', sans-serif;
+    color: #2d3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#booking-form label {
+    display: block;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 8px;
+    font-family: 'Irish Grover', sans-serif;
+}
+
+#booking-form input,
+#booking-form select,
+#booking-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #ccc;
+    color: #000;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+#booking-form input:focus,
+#booking-form select:focus,
+#booking-form textarea:focus {
+    border-color: #2d3e50;
+    background-color: #ccc;
+    outline: none;
+}
+
+#booking-form button {
+    background-color: #ccc;
+    color: #000;
+    border: 2px solid #2d3e50;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-family: 'Irish Grover', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+#booking-form button:hover {
+    background-color: #bbb;
+    border-color: #1b2936;
+}
+
+@media (max-width: 768px) {
+    #booking-container {
+        padding: 20px;
+    }
+
+    #booking-container h1 {
+        font-size: 24px;
+    }
+}
